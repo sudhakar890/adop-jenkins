@@ -1,4 +1,4 @@
-FROM jenkinsci/jenkins:2.73.1
+FROM jenkinsci/jenkins:2.73.2
 
 MAINTAINER Nick Griffin, <nicholas.griffin>
 
@@ -27,6 +27,9 @@ RUN chmod +x -R /usr/share/jenkins/ref/adop_scripts/ && chmod +x /entrypoint.sh
 # 2.73.1 changes compliance
 ## SSHD Module 2.0 has been integrated towards the Jenkins 2.69 release
 RUN echo "    KexAlgorithms diffie-hellman-group1-sha1,diffie-hellman-group-exchange-sha256" >> /etc/ssh/ssh_config
+
+# Pre-requisites
+RUN apt-get install -y zip ldap-utils python-pip && rm -rf /var/lib/apt/lists/*
 
 # Environment variables
 ENV ADOP_LDAP_ENABLED=true ADOP_ACL_ENABLED=true ADOP_SONAR_ENABLED=true ADOP_ANT_ENABLED=true ADOP_MAVEN_ENABLED=true ADOP_NODEJS_ENABLED=true ADOP_GERRIT_ENABLED=true
