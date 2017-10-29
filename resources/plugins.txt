@@ -148,6 +148,7 @@ favorite-view:1.0
 pubsub-light:1.12
 variant:1.1
 jira:2.4.2
+sse-gateway:1.15
 blueocean:1.3.1
 blueocean-commons:1.3.1
 blueocean-config:1.3.1
