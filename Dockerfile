@@ -1,4 +1,4 @@
-FROM jenkinsci/jenkins:2.73.2
+FROM jenkinsci/jenkins:2.73.3
 
 MAINTAINER Nick Griffin, <nicholas.griffin>
 
@@ -24,7 +24,7 @@ USER root
 RUN chmod +x -R /usr/share/jenkins/ref/adop_scripts/ && chmod +x /entrypoint.sh
 # USER jenkins
 
-# 2.73.1 changes compliance
+# 2.73.3 changes compliance
 ## SSHD Module 2.0 has been integrated towards the Jenkins 2.69 release
 RUN echo "    KexAlgorithms diffie-hellman-group1-sha1,diffie-hellman-group-exchange-sha256" >> /etc/ssh/ssh_config
 
