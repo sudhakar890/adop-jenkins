@@ -169,10 +169,10 @@ blueocean-bitbucket-pipeline:1.3.1
 blueocean-display-url:2.1.1
 blueocean-jira:1.3.1
 blueocean-pipeline-scm-api:1.3.1
-gitlab-oauth
-gitlab-plugin
-gitlab-logo
-gitlab-merge-request-jenkins
-violation-comments-to-gitlab
-gitlab-hook
+gitlab-oauth:1.0.9
+gitlab-plugin:1.5.2
+gitlab-logo:1.0.3
+gitlab-merge-request-jenkins:2.0.0
+violation-comments-to-gitlab:1.16
+gitlab-hook:1.4.2
 http_request:1.8.21
