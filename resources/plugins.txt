@@ -175,3 +175,4 @@ gitlab-logo
 gitlab-merge-request-jenkins
 violation-comments-to-gitlab
 gitlab-hook
+http_request:1.8.21
