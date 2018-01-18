@@ -175,3 +175,4 @@ gitlab-logo
 gitlab-merge-request-jenkins
 violation-comments-to-gitlab
 gitlab-hook
+jira-steps:1.3.1
